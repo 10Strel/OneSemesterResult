@@ -19,8 +19,6 @@ string[] Processing(string[] array)
     
     foreach (string elem in array)
     {
-        Console.WriteLine(elem.Length);
-
         if (elem.Length <= limit)
         {
             Array.Resize(ref result, result.Length + 1);
