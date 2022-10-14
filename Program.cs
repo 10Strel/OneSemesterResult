@@ -40,7 +40,7 @@ void PrintResults()
         resultStr = string.Concat(resultStr, "\"", str, "\",");    
     }
     
-    resultStr = string.Concat(resultStr, "]");
+    resultStr = string.Concat(resultStr.Substring(0, resultStr.Length-1), "]");
 
     if (resultArray.Length > 0)
     {
